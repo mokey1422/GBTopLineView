@@ -14,8 +14,8 @@
 		8428BF1F1B90432200F05190 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8428BF1E1B90432200F05190 /* Images.xcassets */; };
 		8428BF221B90432200F05190 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8428BF201B90432200F05190 /* LaunchScreen.xib */; };
 		8428BF2E1B90432200F05190 /* _______Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8428BF2D1B90432200F05190 /* _______Tests.m */; };
-		8428BF411B90445000F05190 /* GBTopLineViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8428BF3E1B90445000F05190 /* GBTopLineViewModel.m */; };
-		8428BF421B90445000F05190 /* GBTopLineView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8428BF401B90445000F05190 /* GBTopLineView.m */; };
+		8428BF481B9055B300F05190 /* GBTopLineView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8428BF451B9055B300F05190 /* GBTopLineView.m */; };
+		8428BF491B9055B300F05190 /* GBTopLineViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8428BF471B9055B300F05190 /* GBTopLineViewModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,10 +42,10 @@
 		8428BF271B90432200F05190 /* 仿淘宝头条轮播Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "仿淘宝头条轮播Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8428BF2C1B90432200F05190 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8428BF2D1B90432200F05190 /* _______Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "_______Tests.m"; sourceTree = "<group>"; };
-		8428BF3D1B90445000F05190 /* GBTopLineViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GBTopLineViewModel.h; sourceTree = "<group>"; };
-		8428BF3E1B90445000F05190 /* GBTopLineViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GBTopLineViewModel.m; sourceTree = "<group>"; };
-		8428BF3F1B90445000F05190 /* GBTopLineView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GBTopLineView.h; sourceTree = "<group>"; };
-		8428BF401B90445000F05190 /* GBTopLineView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GBTopLineView.m; sourceTree = "<group>"; };
+		8428BF441B9055B300F05190 /* GBTopLineView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GBTopLineView.h; sourceTree = "<group>"; };
+		8428BF451B9055B300F05190 /* GBTopLineView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GBTopLineView.m; sourceTree = "<group>"; };
+		8428BF461B9055B300F05190 /* GBTopLineViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GBTopLineViewModel.h; sourceTree = "<group>"; };
+		8428BF471B9055B300F05190 /* GBTopLineViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GBTopLineViewModel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,14 +87,11 @@
 		8428BF101B90432200F05190 /* 仿淘宝头条轮播 */ = {
 			isa = PBXGroup;
 			children = (
+				8428BF431B9055B300F05190 /* GBTopLineView */,
 				8428BF151B90432200F05190 /* AppDelegate.h */,
 				8428BF161B90432200F05190 /* AppDelegate.m */,
 				8428BF181B90432200F05190 /* ViewController.h */,
 				8428BF191B90432200F05190 /* ViewController.m */,
-				8428BF3D1B90445000F05190 /* GBTopLineViewModel.h */,
-				8428BF3E1B90445000F05190 /* GBTopLineViewModel.m */,
-				8428BF3F1B90445000F05190 /* GBTopLineView.h */,
-				8428BF401B90445000F05190 /* GBTopLineView.m */,
 				8428BF1B1B90432200F05190 /* Main.storyboard */,
 				8428BF1E1B90432200F05190 /* Images.xcassets */,
 				8428BF201B90432200F05190 /* LaunchScreen.xib */,
@@ -127,6 +124,17 @@
 				8428BF2C1B90432200F05190 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8428BF431B9055B300F05190 /* GBTopLineView */ = {
+			isa = PBXGroup;
+			children = (
+				8428BF441B9055B300F05190 /* GBTopLineView.h */,
+				8428BF451B9055B300F05190 /* GBTopLineView.m */,
+				8428BF461B9055B300F05190 /* GBTopLineViewModel.h */,
+				8428BF471B9055B300F05190 /* GBTopLineViewModel.m */,
+			);
+			path = GBTopLineView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -230,10 +238,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				8428BF1A1B90432200F05190 /* ViewController.m in Sources */,
+				8428BF491B9055B300F05190 /* GBTopLineViewModel.m in Sources */,
+				8428BF481B9055B300F05190 /* GBTopLineView.m in Sources */,
 				8428BF171B90432200F05190 /* AppDelegate.m in Sources */,
-				8428BF421B90445000F05190 /* GBTopLineView.m in Sources */,
 				8428BF141B90432200F05190 /* main.m in Sources */,
-				8428BF411B90445000F05190 /* GBTopLineViewModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -428,6 +436,7 @@
 				8428BF331B90432200F05190 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8428BF341B90432200F05190 /* Build configuration list for PBXNativeTarget "仿淘宝头条轮播Tests" */ = {
 			isa = XCConfigurationList;
@@ -436,6 +445,7 @@
 				8428BF361B90432200F05190 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
